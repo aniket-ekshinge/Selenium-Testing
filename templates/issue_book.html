@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Issue a Book</h2>
+<form method="POST" action="/issue-book">
+    <label for="book_id">Book ID:</label>
+    <input type="number" id="book_id" name="book_id" required>
+    <label for="issued_to">Issued To:</label>
+    <input type="text" id="issued_to" name="issued_to" required>
+    <button type="submit">Issue Book</button>
+</form>
+{% endblock %}

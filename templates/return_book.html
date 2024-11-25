@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Return a Book</h2>
+<form method="POST" action="/return-book">
+    <label for="book_id">Book ID:</label>
+    <input type="number" id="book_id" name="book_id" required>
+    <button type="submit">Return Book</button>
+</form>
+{% endblock %}
