@@ -4,7 +4,7 @@ import sqlite3
 app = Flask(__name__)
 
 def init_db():
-    conn = sqlite3.connect('library_test.db')  # Use the same name as in your tests
+    conn = sqlite3.connect('library_test.db')  
     c = conn.cursor()
     # Create books table
     c.execute('''
